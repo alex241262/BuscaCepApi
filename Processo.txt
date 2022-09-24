@@ -1,0 +1,5 @@
+1-Criado projeto no Visual Estudio 2019.
+-Nome do projeto: BuscacepApi.
+  -o projeto consistem consumir uma api 
+   referete a cep e trazer os dadaso rua,estado,
+   codade,bairro.
