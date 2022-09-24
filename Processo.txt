@@ -1,5 +1,23 @@
-1-Criado projeto no Visual Estudio 2019.
--Nome do projeto: BuscacepApi.
-  -o projeto consistem consumir uma api 
-   referete a cep e trazer os dadaso rua,estado,
-   codade,bairro.
+1- Criado projeto no Visual Estudio 2019.
+	-Nome do projeto: BuscacepApi.
+	-o projeto consistem consumir uma api 
+		referete a cep e trazer os dadaso rua,estado,
+	codade,bairro.
+   
+ 2- Criado classe BusacaCepApi
+    - Usado Api url: https://viacep.com.br/
+		{
+      "cep": "01001-000",
+      "logradouro": "Praça da Sé",
+      "complemento": "lado ímpar",
+      "bairro": "Sé",
+      "localidade": "São Paulo",
+      "uf": "SP",
+      "ibge": "3550308",
+      "gia": "1004",
+      "ddd": "11",
+      "siafi": "7107"
+    }
+	- para ajudar na criação da classe fou usado quicktype https://app.quicktype.io/
+		- jogando a estrutura nele ele cria a classe na linguagem selecionada.
+			só copiar e colar na sua clase criada.
