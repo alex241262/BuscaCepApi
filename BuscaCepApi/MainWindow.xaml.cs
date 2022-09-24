@@ -41,8 +41,12 @@ namespace BuscaCepApi
         }
         public async void ConsultaBuscaCepApic()
         {
-            
             string Cep = txtbox1.Text;
+            if (Cep.Length < 8)
+            {
+                MessageBox.Show("preencha o cep com 8 caracteres");
+                txtbox1.Focus();
+            }
             try
             {
                 var service = new BuscaCepApiService();

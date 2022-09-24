@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace BuscaCepApi.Services
 {
@@ -19,7 +20,7 @@ namespace BuscaCepApi.Services
             {
                 var response = await client.GetAsync(url);
                 var contentBody = await response.Content.ReadAsStringAsync();
-
+               
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
                 {
                     return JsonConvert.DeserializeObject<BuscaCepApic>(contentBody);
