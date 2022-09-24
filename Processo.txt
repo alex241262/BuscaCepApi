@@ -4,7 +4,7 @@
 		referete a cep e trazer os dadaso rua,estado,
 	codade,bairro.
    
- 2- Criado classe BusacaCepApi
+ 2- Criado classe BusacaCepApic
     - Usado Api url: https://viacep.com.br/
 		{
       "cep": "01001-000",
@@ -21,3 +21,7 @@
 	- para ajudar na criação da classe fou usado quicktype https://app.quicktype.io/
 		- jogando a estrutura nele ele cria a classe na linguagem selecionada.
 			só copiar e colar na sua clase criada.
+			
+ 3- criado Serviço BuscaCepApic
+	onde o programa ira chamar a classe apra apresentar os dados.
+	
