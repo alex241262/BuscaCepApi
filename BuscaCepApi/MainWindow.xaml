@@ -5,20 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BuscaCepApi"
         mc:Ignorable="d"
-        Title="MainWindow" Height="250" Width="300">
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Title="MainWindow" Height="260" Width="300">
     <Grid>
         <StackPanel Margin="10 10 10 0" Background="Chocolate">
             <Label Content="CEP" FontSize="12" Margin="20 0 0 0"/>
-            <TextBlock Width="100" Background="Bisque" HorizontalAlignment="Left" Margin=" 20 0 0 0" />
-            <Button Content="Pesquisar" Background="Azure" Width="100" HorizontalAlignment="Left" Margin="150 -18 0 0 "/>
+            <TextBox x:Name="txtbox1" Width="100" Background="Bisque" HorizontalAlignment="Left" Margin=" 20 0 0 0"/>
+            <Button Content="Pesquisar" Background="Azure" Width="100" HorizontalAlignment="Left" Margin="150 -18 0 0 " Click="Button_Click"/>
             <Label Content="Cidade" FontSize="12" Margin="20 0 0 0"/>
-            <TextBlock Width="170" Background="Bisque" HorizontalAlignment="Left" Margin=" 20 0 0 0" IsEnabled="False" />
+            <TextBlock Text="{Binding BuscaCepApic.Localidade}" Width="170" Background="Bisque" HorizontalAlignment="Left" Margin=" 20 0 0 0" IsEnabled="False" />
             <Label Content="UF" FontSize="12" Margin="200 -40 0 0"/>
-            <TextBlock Width="50" Background="Bisque" HorizontalAlignment="Left" Margin=" 200 -17 0 0" IsEnabled="False" />
+            <TextBlock Text="{Binding BuscaCepApic.Uf}" Width="50" Background="Bisque" HorizontalAlignment="Left" Margin=" 200 -17 0 0" IsEnabled="False" />
             <Label Content="Rua" FontSize="12" Margin="20 0 0 0"/>
-            <TextBlock Width="230" Background="Bisque" HorizontalAlignment="Left" Margin=" 20 0 0 0" IsEnabled="False" />
+            <TextBlock Text="{Binding BuscaCepApic.Logradouro}" Width="230" Background="Bisque" HorizontalAlignment="Left" Margin=" 20 0 0 0" IsEnabled="False" />
             <Label Content="Bairro" FontSize="12" Margin="20 0 0 0"/>
-            <TextBlock Width="230" Background="Bisque" HorizontalAlignment="Left" Margin=" 20 0 0 0" IsEnabled="False" />
+            <TextBlock Text="{Binding BuscaCepApic.Bairro}" Width="230" Background="Bisque" HorizontalAlignment="Left" Margin=" 20 0 0 0" IsEnabled="False" />
             <Label Content="alexandreferreira168@gmail.com" FontSize="12" FontFamily="arial" Margin="10 20 0 0" Width="200" />
         </StackPanel>
     </Grid>
